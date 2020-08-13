@@ -1,0 +1,96 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator_container {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 6px solid gray;
+  border-radius: 10px;
+}
+
+.row:first-child {
+  position: relative;
+}
+
+.show_operator {
+  position: absolute;
+  left: 10px;
+  top: 15%;
+  z-index: 10;
+}
+
+.row {
+  width: 100%;
+  height: 20%;
+  margin: 0;
+  padding: 3px, 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 3px;
+}
+
+.display {
+  height: 93%;
+  width: 75%;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: skyblue;
+  border: 3px solid rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  padding: 0px;
+  padding-right: 10px;
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.button {
+  height: 100%;
+  width: 25%;
+  margin: 3px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  opacity: 70%;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.button:active {
+  opacity: 80%;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.big {
+  width: 51%;
+}
+
+.clear_button {
+  margin-left: 3px;
+  background-color: grey;
+}
+
+.operation {
+  background-color: rgb(255, 136, 0);
+}
